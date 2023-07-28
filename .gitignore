@@ -1,4 +1,3 @@
-# Untracked files in MPLABX projects
 /**/build/*
 /**/nbproject/*
 !/**/nbproject/*.xml

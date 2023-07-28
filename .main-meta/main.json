@@ -4,8 +4,8 @@
     "content": {
         "metaDataVersion": "1.3.0",
         "name": "com.microchip.mcu8.mplabx.project.pic18f56q71-led-current-control-opamp",
-        "version": " ",
-        "displayName": "",
+        "version": "1.0.0",
+        "displayName": "Operational Amplifier (OPA) — LED Current Control with OPA, ADC and PWM Using the PIC18F56Q71 Microcontroller with MCC Melody",
         "projectName": "pic18f56q71-led-current-control-opamp",
         "shortDescription": "This code example demonstrates how to control the LED current using the built-in OPA, ADC and PWM peripherals of the PIC microcontroller.",
         "ide": {
@@ -19,12 +19,12 @@
             }
         ],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "PIC18F-Q_DFP",
+            "semverRange": "^1.20.405"
         },
         "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "MCC",
+            "semverRange": ">=5.3.7"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -36,9 +36,9 @@
                 "versionRange": "*"
             }
         },
-        "author": "Prasad Aradhya",
-        "peripherals": [],
-        "keywords": [],
+        "author": "Mihai Alexandru Ricanu",
+        "peripherals": ["OPA","ADC","PWM"],
+        "keywords": ["OPA","ADC"],
         "additionalData": {
             "longDescription": {
                 "metaDataVersion": "1.0.0",
