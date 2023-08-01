@@ -2,7 +2,7 @@
 
 # Operational Amplifier (OPA) — LED Current Control with OPA, ADC and PWM Using the PIC18F56Q71 Microcontroller with MCC Melody
 
-This code example demonstrates how to control the LED current using a Pulse-Width Modulation (PWM) signal, an Operational Amplifier (OPA) and the Analog-to-Digital Converter (ADC). The LED in series with a current limiting resistor are connected to the drain of an 2N7000 N-channel MOSFET and supplied from 5V. The source of the transistor is connected to ground through a shunt resistor. A PROTO Click board is used to assemble the previously described circuit. A PWM signal is used to drive the gate of the transistor. The voltage drop across the shunt resistor is amplified and measured using the OPA, in Inverting Programmable Gain configuration, and the ADC, respectively. The gain of the OPA is configured by enabling the built-in resistor ladder. A POT 3 Click board is used to set the LED current by altering the duty cycle of the PWM signal. Based on the maximum allowed LED current specific to the circuit, additional duty cyle adjustment is required to account for the LED's thermal runaway. The ADC is configured in Average Mode and Context Switching is used to read the outputs of the OPA and the potentiometer.
+This code example demonstrates how to control the LED current using a Pulse-Width Modulation (PWM) signal, an Operational Amplifier (OPA) and the Analog-to-Digital Converter (ADC). The LED in series with a current limiting resistor are connected to the drain of an 2N7000 N-channel MOSFET and they are powered by a 5V supply. The source of the transistor is connected to ground through a shunt resistor. This circuit assembly is facilitated by the use of a PROTO Click board™. A PWM signal is used to drive the gate of the transistor. The voltage drop across the shunt resistor is amplified by the OPA, in Inverting Programmable Gain configuration, and measured by the ADC. The gain of the OPA is configured by enabling the built-in resistor ladder. A POT 3 Click board is used to set the LED current by altering the duty cycle of the PWM signal. Based on the maximum allowed LED current specific to the circuit, additional duty cyle adjustment is required to account for the LED's thermal runaway. The ADC is configured in Average mode and context switching is used to read the outputs of the OPA and the potentiometer.
 
 ## Related Documentation
 
@@ -25,7 +25,7 @@ More details and code examples on the PIC18F56Q71 can be found at the following 
 - [Curiosity Nano Adapter](https://www.microchip.com/en-us/development-tool/AC164162):
   <br><img src="images/Curiosity-Nano-Adapter.jpg" height="400">
 
-- [PROTO CLICK board™](https://www.mikroe.com/proto-click) (mikroBUS™ socket 1):
+- [PROTO CLICK board](https://www.mikroe.com/proto-click) (mikroBUS™ socket 1):
   <br><img src="images/proto-click-board.jpg" height="400">
 
 - [POT 3 CLICK board](https://www.mikroe.com/pot-3-click) (mikroBUS socket 2):
@@ -51,7 +51,7 @@ More details and code examples on the PIC18F56Q71 can be found at the following 
   - V<sub>F</sub> is the LED's forward voltage
   - V<sub>DS</sub> is the transistor's drain-to-source on-sate resistance
 
-  Assuming the LED's forward voltage to be 2V [according to the datasheet](https://www.sparkfun.com/products/10820), the transistor's drain-to-source resistance to be 5Ω [according to the datasheet](https://www.onsemi.com/pdf/datasheet/nds7002a-d.pdf), and the supply source voltage to be 5V, the LED current when the transistor is switched on is 42.25 mA. This translates into a voltage drop of 422.5 mV across the shunt resistor. With the gain set to 4, the OPA will output approximately 1.7V. Based on these calculations, a maximum average LED current of 40 mA is set in software.
+  Assuming the LED's forward voltage is 2V [according to the data sheet](https://www.sparkfun.com/products/10820), the transistor's drain-to-source resistance is 5Ω [according to the data sheet](https://www.onsemi.com/pdf/datasheet/nds7002a-d.pdf), and the supply source voltage is 5V, the LED current when the transistor is switched on is 42.25 mA. This translates into a voltage drop of 422.5 mV across the shunt resistor. With the gain set to 4, the OPA will output approximately 1.7V. Based on these calculations, a maximum average LED current of 40 mA is set in software.
 
   The C1 capacitor is required to use the OPA in Peak Detect configuration. This configuration allows the ADC to sample the OPA's output even when the MOSFET is driven at low PWM duty cycles.
 <br>
@@ -213,7 +213,7 @@ The following configurations must be made for this project:
 
 ## Summary
 
-This code example shows how to control the current through an LED using the OPA, ADC and PWM peripherals.
+This code example shows how to control the LED current using the OPA, ADC and PWM peripherals.
 <br>
 
 [Back to Top](#operational-amplifier-opa--led-current-control-with-opa-adc-and-pwm-using-the-pic18f56q71-microcontroller-with-mcc-melody)
