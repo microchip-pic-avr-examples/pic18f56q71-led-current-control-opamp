@@ -84,7 +84,7 @@
                    displayName="Important Files"
                    projectFiles="false">
       <itemPath>Makefile</itemPath>
-      <itemPath>Q71-MCC-testing.mc3</itemPath>
+      <itemPath>pic18f56q71-led-current-control.mc3</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
@@ -97,11 +97,11 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>nEdbgTool</platformTool>
         <languageToolchain>XC8</languageToolchain>
-        <languageToolchainVersion>2.41</languageToolchainVersion>
+        <languageToolchainVersion>2.45</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC18F-Q_DFP" vendor="Microchip" version="1.20.405"/>
+        <pack name="PIC18F-Q_DFP" vendor="Microchip" version="1.21.411"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -317,7 +317,7 @@
         <property key="memories.programmemory.ranges" value="0-ffff"/>
         <property key="poweroptions.powerenable" value="true"/>
         <property key="programmerToGoFilePath"
-                  value="C:/Users/M71602/Documents/pic18f57q71-led-current-control-opamp/pic18f56q71-led-current-control.X/debug/pro/pic18f56q71-led-current-control_ptg"/>
+                  value="C:/Users/M71602/Documents/pic18f56q71-led-current-control-opamp/pic18f56q71-led-current-control.X/debug/pro/pic18f56q71-led-current-control_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"
@@ -341,13 +341,13 @@
         <targetDevice>PIC18F56Q71</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>noID</platformTool>
+        <platformTool>nEdbgTool</platformTool>
         <languageToolchain>XC8</languageToolchain>
-        <languageToolchainVersion>2.41</languageToolchainVersion>
+        <languageToolchainVersion>2.45</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC18F-Q_DFP" vendor="Microchip" version="1.20.405"/>
+        <pack name="PIC18F-Q_DFP" vendor="Microchip" version="1.21.411"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -562,6 +562,8 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-ffff"/>
         <property key="poweroptions.powerenable" value="true"/>
+        <property key="programmerToGoFilePath"
+                  value="C:/Users/M71602/Documents/pic18f56q71-led-current-control-opamp/pic18f56q71-led-current-control.X/debug/free/pic18f56q71-led-current-control_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"
